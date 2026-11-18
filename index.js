@@ -24,3 +24,4 @@ const server = http.createServer((req, res) => {
     res.end('Erreur de lecture de la configuration');
   }
 });
+server.listen(process.env.PORT || 8080, '0.0.0.0');
